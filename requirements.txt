@@ -1,0 +1,6 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+openai>=1.0   # only for 02_embed.py and 04_llm_zeroshot.py

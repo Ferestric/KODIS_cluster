@@ -1,0 +1,16 @@
+# Raw corpus and anything derived row-for-row from it
+data/raw/*
+!data/raw/.gitkeep
+data/processed/subset_320.csv
+
+# Generated outputs
+results/*
+!results/.gitkeep
+
+# Secrets and environment
+.env
+api_key*.txt
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
