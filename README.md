@@ -1,7 +1,7 @@
 # Implicit Cultural Identity Signals in Language: Detection and Effects in Negotiation Dialogue
 
-Code for the LREC 2026 workshop paper by Bin Han, Danah Yun, James Hale, and Jonathan Gratch
-(University of Southern California).
+Code for the paper by Bin Han, Danah Yun, James Hale, and Jonathan Gratch (University of Southern California),
+published at the SoCon & NLPSI Workshops @ LREC 2026 (Palma, Mallorca, Spain).
 
 We test whether a speaker's country (U.S., U.K., Mexico, South Africa) can be inferred from
 English negotiation dialogue in the KODIS corpus, comparing a zero-shot LLM with
@@ -15,7 +15,14 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=...   # only for steps 2 and 4
 ```
 
-Place the KODIS data in `data/raw/` (see [Data](#data)).
+Download the two raw CSV files from the project Google Drive folder and place them in
+`data/raw/` (see [Data](#data)):
+
+**Data folder:** https://drive.google.com/drive/folders/1Hfh8iY8TYzEtA_xjtBN0TEjpWahfGBzj
+
+Access is restricted. Request access with a USC account, or contact Bin Han (binhan@usc.edu).
+The raw data include participant survey responses and should not be redistributed or
+committed to this repository.
 
 ## Pipeline
 
@@ -37,7 +44,7 @@ in `data/processed/`. Outputs are written to `results/`.
 ## Data
 
 ```
-data/raw/                              (not tracked; add locally)
+data/raw/                              (not tracked; download from Google Drive)
   KODIS-EN.csv                         English KODIS corpus (Hale et al., 2025)
   KODIS_overlap_by_formattedChat.csv   The 320 rows of the classification subset
 data/processed/
@@ -65,13 +72,34 @@ from library versions and, for RandomForest, model randomness.
 
 ## Citation
 
-```
-Bin Han, Danah Yun, James Hale, and Jonathan Gratch. 2026. Implicit Cultural Identity
-Signals in Language: Detection and Effects in Negotiation Dialogue. In Proceedings of the
-LREC 2026 Workshop on ... (SoCon-NLPSI).
+```bibtex
+@inproceedings{han-etal-2026-implicit,
+  title     = {Implicit Cultural Identity Signals in Language: Detection and Effects in Negotiation Dialogue},
+  author    = {Han, Bin and Yun, Danah and Hale, James and Gratch, Jonathan},
+  booktitle = {Proceedings of the 1st Workshop on Social Context (SoCon) and the 2nd Workshop on
+               Integrating NLP and Psychology to Study Social Interactions (NLPSI) @ LREC 2026},
+  year      = {2026},
+  address   = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)}
+}
 ```
 
-KODIS corpus: Hale et al. (2025). KODIS: A Multicultural Dispute Resolution Dialogue Corpus. NAACL 2025.
+Please also cite the KODIS corpus:
+
+```bibtex
+@inproceedings{hale-etal-2025-kodis,
+  title     = {{KODIS}: A Multicultural Dispute Resolution Dialogue Corpus},
+  author    = {Hale, James Anthony and Rakshit, Sushrita and Chawla, Kushal and Brett, Jeanne M. and Gratch, Jonathan},
+  booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the
+               Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  pages     = {12771--12785},
+  year      = {2025}
+}
+```
+
+## Contact
+
+Bin Han — binhan@usc.edu
 
 ## Acknowledgements
 
